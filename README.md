@@ -4,6 +4,6 @@ This project represents a complete, industry standard, end-to-end data analytics
 
 This project is perfect for:
 
-📊 Data Analyst aspirants who want to build a strong Portfolio Project for interviews and LinkedIn
-📚 Anyone learning Python, SQL, and Power BI
-💼 Professionals preparing for interviews in Data Analytics, Data Science or Product Analytics roles
+- 📊 Data Analyst aspirants who want to build a strong Portfolio Project for interviews and LinkedIn
+- 📚 Anyone learning Python, SQL, and Power BI
+- 💼 Professionals preparing for interviews in Data Analytics, Data Science or Product Analytics roles
