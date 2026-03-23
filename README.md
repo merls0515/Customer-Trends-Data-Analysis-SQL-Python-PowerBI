@@ -1,148 +1,122 @@
-# 👨🏻‍💻Customer Behavior Data Analyst Portfolio Project
+# 📊 Customer Behavior Analysis Project
 
-   🔍 Overview
+## 🔍 Overview
 
-This project is an end-to-end, company-level data analytics project designed to replicate how data analysts work in real business environments. The objective is to analyze customer shopping behavior and generate actionable insights to improve sales, customer engagement, and marketing strategies.
+This project is an end-to-end data analytics case study focused on understanding customer shopping behavior. The goal is to extract insights that can help improve sales, customer engagement, and business strategy.
 
-The project follows the complete analytics lifecycle:
-Business Understanding → Data Cleaning → SQL Analysis → Dashboarding → Reporting → Presentation
+---
 
-   🧠 Business Problem
+## 🎯 Business Problem
 
-A retail company wants to understand changes in customer purchasing behavior across:
+A retail company wants to analyze customer data to identify:
 
-Demographics
+* Purchasing trends
+* Customer segments
+* Impact of discounts and subscriptions
+* Revenue drivers
 
-Product categories
+---
 
-Discounts & promotions
+## 🛠️ Tools & Technologies
 
-Shipping preferences
+* Python (Pandas, NumPy)
+* SQL (PostgreSQL)
+* Power BI
+* GitHub
 
-Subscription status
+---
 
-Key Question:
+## 📁 Dataset
 
-How can customer shopping data be leveraged to identify trends, improve customer engagement, and optimize business decisions?
+The dataset contains customer-level information including:
 
-   🛠️ Tools & Technologies
+* Demographics (age, gender)
+* Purchase details
+* Product categories
+* Discounts and reviews
+* Subscription status
 
-Python (Pandas, NumPy) – Data cleaning & feature engineering
+---
 
-PostgreSQL – Business analysis using SQL
+## 🔄 Project Workflow
 
-Power BI – Interactive dashboard creation
+### 1. Data Cleaning (Python)
 
-GitHub – Project versioning & portfolio presentation
+* Handled missing values using category-based median
+* Converted column names to snake_case
+* Created new features:
 
-   📊 Dataset Description
+  * Age groups
+  * Purchase frequency (in days)
 
-Each row represents a customer’s most recent purchase, including:
+### 2. Data Analysis (SQL)
 
-Demographics (age, gender)
+* Revenue analysis by gender
+* High-value customers using discounts
+* Top-rated products
+* Subscription impact analysis
+* Customer segmentation
 
-Product details (category, size, color)
+### 3. Dashboard (Power BI)
 
-Purchase behavior (amount, discounts, shipping)
+Created an interactive dashboard with:
 
-Loyalty indicators (previous purchases, frequency)
+* KPI cards (customers, revenue, ratings)
+* Revenue & sales by category
+* Customer segmentation
+* Filters (gender, subscription, category)
 
-Subscription & payment information
+---
 
-⚠️ Note: The dataset provides a behavioral snapshot, not full transaction history — similar to real corporate constraints.
+## 📊 Key Insights
 
-   🔧 Data Cleaning & Feature Engineering
+* Young adults generate the highest revenue
+* Express shipping customers spend more
+* Discounts influence high-value purchases
+* Many loyal customers are not subscribed
 
-Performed in Python:
+---
 
-Handled missing review_rating using category-wise median imputation
+## 💡 Business Recommendations
 
-Standardized column names using snake_case
+* Promote subscription plans to loyal customers
+* Invest in express shipping options
+* Focus marketing on high-performing products
+* Use targeted discounts strategically
 
-Created new features:
+---
 
-age_group
+## 📂 Project Files
 
-purchase_frequency_days
+* `/notebooks` → Python analysis
+* `/sql` → SQL queries
+* `/dashboard` → Power BI file
+* `/reports` → Presentation & report
 
-Removed redundant columns after validation
+---
 
-Notebook:
-📁 notebooks/01_data_cleaning_eda.ipynb
+## 📸 Dashboard Preview
 
-   🧮 SQL Business Analysis
+![Dashboard](images/dashboard_preview.png)
 
-Key business questions answered using SQL:
+---
 
-Revenue by gender
+## 🚀 How to Run
 
-High-spending customers using discounts
+1. Clone the repository
+2. Install dependencies:
 
-Top-rated products
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run Jupyter Notebook
 
-Subscription vs non-subscription behavior
+---
 
-Customer segmentation (New / Returning / Loyal)
+## 👨‍💻 Author
 
-Top products per category (window functions)
+Your Name
 
-   SQL file:
-📁 sql/business_analysis_queries.sql
+---
 
-📈 Power BI Dashboard
-
-An interactive dashboard built for management decision-making:
-
-KPI cards (customers, avg spend, ratings)
-
-Revenue & sales analysis
-
-Customer segmentation
-
-Fully interactive slicers
-
-Files:
-
-📁 dashboard/customer_behavior_dashboard.pbix
-
-📁 dashboard/dashboard_screenshots/
-
-📑 Reporting & Presentation
-
-Project Report: Technical documentation for internal use
-
-Presentation Deck: Stakeholder-ready insights summary
-
-Files:
-
-📁 report/customer_behavior_analysis_report.pdf
-
-📁 presentation/customer_behavior_presentation.pdf
-
-   🚀 Key Business Insights
-
-Express shipping customers spend more on average
-
-Loyal customers form the majority of the revenue base
-
-Several products rely heavily on discounts
-
-Subscription adoption among repeat buyers is relatively low
-
-   📌 How to Use This Repository
-
-Review the business problem in this README
-
-Explore Python EDA notebook
-
-Check SQL queries for analysis logic
-
-View dashboard screenshots or open .pbix
-
-Read final insights in the presentation
-
- 📎 Author
-
-Merlyn V
-B.Tech CSE (Health Informatics)
-Aspiring Data Analyst | SQL | Python | Power BI
+## ⭐ If you like this project, give it a star!
